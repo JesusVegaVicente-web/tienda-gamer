@@ -1,0 +1,405 @@
+/* Fuente Google Fonts: Orbitron */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+/* Global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding-top: 50px; /* o un poco más si es necesario */
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main {
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
+}
+
+section h2,
+#formulario-contacto h2 {
+    color: #00ffcc;
+    border-bottom: 3px solid #00ffcc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* Botones */
+button, .volver-arriba {
+    background-color: #00ffcc;
+    color: #121212;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .volver-arriba:hover {
+    background-color: #00e6b8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 255, 204, 0.3);
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    padding-top: 60px; /* espacio para el logo flotante */
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    
+    
+}
+
+/* Logo centrado y sobresaliente */
+.header-logo-container {
+    position: absolute;
+    top: -40px; /* flota hacia arriba */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.header-logo-container img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Ajustes de contenido */
+.header-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #00ffcc;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 1000px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #00ffcc;
+    color: #121212;
+}
+
+/* Footer */
+footer {
+    background-color: #1c1c1c;
+    color: #999;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9em;
+    border-top: 4px solid #00ffcc;
+}
+
+footer a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+footer a:not(.volver-arriba):hover {
+    text-decoration: underline;
+}
+
+/* Redes Sociales */
+.redes-sociales {
+    margin-bottom: 20px;
+}
+
+.redes-sociales a {
+    color: #f0f0f0;
+    margin: 0 12px;
+    font-size: 1.8em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a:hover {
+    color: #00ffcc;
+    transform: scale(1.2);
+}
+
+/* Productos */
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: clamp(250px, 100%, 300px);
+    border: 1px solid #2a2a2a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 255, 204, 0.3);
+}
+
+.producto img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    color: #00ffcc;
+    margin: 0 0 10px;
+    font-size: 1.4em;
+}
+
+.producto p {
+    color: #f0f0f0;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Multimedia */
+.media-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.media-contenedor img,
+.media-contenedor video {
+    max-width: 100%;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+}
+
+/* Reseñas */
+.reseñas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.reseña-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #004d40;
+    box-shadow: 0 0 12px rgba(0, 255, 204, 0.25);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reseña-card .avatar-reseña {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #00ffcc;
+    object-fit: cover;
+}
+
+.reseña-card h3 {
+    color: #00ffcc;
+    font-size: 1.3em;
+    margin: 0 0 8px;
+}
+
+.reseña-card .estrellas {
+    color: #ffd700;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.reseña-card .estrellas .fa-star-half-alt {
+    color: #ffd700;
+}
+
+.reseña-card .estrellas .far.fa-star {
+    color: #ccc;
+}
+
+.reseña-card p {
+    font-size: 0.95em;
+    color: #ccc;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+
+/* Carrito */
+#carrito ul {
+    list-style: none;
+    padding: 0;
+}
+
+#carrito li {
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-left: 3px solid #00ffcc;
+}
+
+/* Formulario Contacto */
+#formulario-contacto {
+    padding: 40px 20px;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+
+#formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#formulario-contacto label {
+    color: #00ffcc;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    padding: 12px;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#formulario-contacto input:focus,
+#formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #00ffcc;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+
+/* Celulares pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+}
+
+/* Celulares medianos y pequeños (hasta 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Tablets (hasta 1024px) */
+@media (max-width: 1024px) {
+    header {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}
